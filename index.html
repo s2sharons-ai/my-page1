@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>הדף האישי שלי</title>
+<style>
+  :root {
+    --bg: #faf7f2;
+    --ink: #1f2430;
+    --muted: #6b7280;
+    --accent: #c2410c;
+    --card: #ffffff;
+    --line: #e7e1d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161c;
+      --ink: #eceef3;
+      --muted: #9aa3b2;
+      --accent: #fb923c;
+      --card: #1c1f27;
+      --line: #2b2f3a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", "Heebo", Arial, sans-serif;
+    line-height: 1.7;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 20px 80px; }
+  .avatar {
+    width: 96px; height: 96px; border-radius: 50%;
+    background: var(--accent); color: #fff;
+    display: grid; place-items: center;
+    font-size: 40px; font-weight: 700;
+    margin-bottom: 20px;
+  }
+  h1 { font-size: 2.2rem; margin: 0 0 4px; }
+  .tagline { color: var(--muted); font-size: 1.15rem; margin: 0 0 32px; }
+  section { margin-bottom: 36px; }
+  h2 {
+    font-size: 1.1rem; color: var(--accent);
+    margin: 0 0 10px; letter-spacing: .02em;
+  }
+  p { margin: 0 0 10px; }
+  .cards { display: grid; gap: 12px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 16px 18px;
+  }
+  .card strong { display: block; margin-bottom: 2px; }
+  .card span { color: var(--muted); font-size: .95rem; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .links a {
+    text-decoration: none; color: var(--ink);
+    border: 1px solid var(--line); background: var(--card);
+    padding: 8px 16px; border-radius: 999px;
+    transition: border-color .15s, color .15s;
+  }
+  .links a:hover { border-color: var(--accent); color: var(--accent); }
+  footer { color: var(--muted); font-size: .85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="avatar">ש</div>
+  <h1>שלום, אני [השם שלך]</h1>
+  <p class="tagline">[משפט אחד שמתאר אותך או את מה שאתם עושים]</p>
+
+  <section>
+    <h2>קצת עליי</h2>
+    <p>[שתיים-שלוש שורות על מי שאתם, מה מעניין אתכם ומה אתם אוהבים לעשות.]</p>
+  </section>
+
+  <section>
+    <h2>מה אני עושה</h2>
+    <div class="cards">
+      <div class="card">
+        <strong>[תחום או פרויקט ראשון]</strong>
+        <span>[תיאור קצר של מה זה ולמה זה חשוב לכם]</span>
+      </div>
+      <div class="card">
+        <strong>[תחום או פרויקט שני]</strong>
+        <span>[תיאור קצר]</span>
+      </div>
+      <div class="card">
+        <strong>[תחום או פרויקט שלישי]</strong>
+        <span>[תיאור קצר]</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>בואו נדבר</h2>
+    <div class="links">
+      <a href="mailto:you@example.com">מייל</a>
+      <a href="https://github.com/your-username">GitHub</a>
+      <a href="#">אינסטגרם</a>
+    </div>
+  </section>
+
+  <footer>נבנה בעזרת Claude. אפשר לערוך כל טקסט כאן ישירות בקובץ.</footer>
+</main>
+</body>
+</html>
