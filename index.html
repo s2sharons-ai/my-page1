@@ -65,6 +65,20 @@
     padding: 4px 16px; color: var(--muted);
     font-size: 1.1rem;
   }
+  .quote strong { color: var(--ink); }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .links a {
+    text-decoration: none; color: var(--ink);
+    border: 1px solid var(--line); background: var(--card);
+    padding: 9px 22px; border-radius: 999px;
+    transition: border-color .15s, color .15s;
+  }
+  .links a:hover { border-color: var(--accent); color: var(--heading); }
+  .links a.primary {
+    background: var(--accent); border-color: var(--accent);
+    color: #171717; font-weight: 700;
+  }
+  .links a.primary:hover { color: #171717; filter: brightness(1.06); }
   footer { color: var(--muted); font-size: .85rem; margin-top: 48px; }
 </style>
 </head>
@@ -108,7 +122,16 @@
   </section>
 
   <section>
-    <p class="quote">אין רגש "לא נכון". יש רגש שעוד לא קיבל מקום.</p>
+    <p class="quote"><strong>שינוי לא חייב להיות גדול כדי להיות אמיתי. לפעמים הוא מתחיל בשיחה אחת.</strong></p>
+  </section>
+
+  <section>
+    <h2>בואו נדבר</h2>
+    <div class="links">
+      <a class="primary" href="https://wa.me/972544603911">וואטסאפ</a>
+      <a href="https://instagram.com/sharon_holisticoach">אינסטגרם</a>
+      <a href="mailto:s2sharons@gmail.com">מייל</a>
+    </div>
   </section>
 
   <footer>© שרון בן אהרון</footer>
