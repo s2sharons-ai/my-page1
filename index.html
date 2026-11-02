@@ -6,22 +6,27 @@
 <title>שרון בן אהרון | מאמנת הוליסטית רגשית</title>
 <meta name="description" content="שרון בן אהרון, מאמנת הוליסטית רגשית. ליווי שמחבר בין רגש, גוף ונפש.">
 <style>
+  /* צבעי המותג של שרון:
+     רקע #e6ded3 | כתום #de6129 | כחול כהה #043372 | שחור #171717
+     שאר הגוונים (muted, card, line) נגזרים מהם. */
   :root {
-    --bg: #faf6f1;
-    --ink: #2a2530;
-    --muted: #6f6877;
-    --accent: #b45a4a;
-    --card: #ffffff;
-    --line: #eadfd5;
+    --bg: #e6ded3;
+    --ink: #171717;
+    --muted: #55524f;
+    --accent: #de6129;
+    --heading: #043372;
+    --card: #f1ece4;
+    --line: #d3c9bb;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #16141a;
-      --ink: #efeaf2;
-      --muted: #a39cab;
-      --accent: #e39a88;
-      --card: #1e1b24;
-      --line: #2e2a37;
+      --bg: #171717;
+      --ink: #e6ded3;
+      --muted: #a9a195;
+      --accent: #de6129;
+      --heading: #de6129;
+      --card: #222222;
+      --line: #343434;
     }
   }
   * { box-sizing: border-box; }
@@ -44,7 +49,7 @@
   .tagline { color: var(--muted); font-size: 1.2rem; margin: 0 0 36px; }
   section { margin-bottom: 38px; }
   h2 {
-    font-size: 1.1rem; color: var(--accent);
+    font-size: 1.1rem; color: var(--heading);
     margin: 0 0 10px; letter-spacing: .02em;
   }
   p { margin: 0 0 10px; }
